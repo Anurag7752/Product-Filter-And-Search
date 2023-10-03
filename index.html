@@ -1,0 +1,92 @@
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product Filter And Search</title>
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div id="search-container">
+                <input type="search" id="search-input" placeholder="Search product name here.." />
+                <button id="search">Search</button>
+            </div>
+            <div id="buttons">
+                <button class="button-value" onclick="filterProduct('all')">All</button>
+                <button class="button-value" onclick="filterProduct('Topwear')">
+                    Topwear
+                </button>
+                <button class="button-value" onclick="filterProduct('Bottomwear')">
+                    Bottomwear
+                </button>
+                <button class="button-value" onclick="filterProduct('Jacket')">
+                    Jacket
+                </button>
+                <button class="button-value" onclick="filterProduct('Watch')">
+                    Watch
+                </button>
+            </div>
+            <div id="products"></div>
+        </div>
+
+        let products = {
+        data: [
+        {
+        productName: "Regular White T-Shirt",
+        category: "Topwear",
+        price: "30",
+        <img src="images/1-Solid-White-T-Shirt.jpg">
+        },
+        {
+        productName: "Beige Short Skirt",
+        category: "Bottomwear",
+        price: "49",
+        <img src="images/51bcf0cc-5d01-4e75-bee4-0062e2fa46ae.5500200724701a2bfdb0f722b23f09a6.webp" alt="">
+        },
+        {
+        productName: "Sporty SmartWatch",
+        category: "Watch",
+        price: "99",
+        <img src="images/th (3).jpeg">
+        },
+        {
+        productName: "Basic Knitted Top",
+        category: "Topwear",
+        price: "29",
+        <img src="images/th (4).jpeg" alt="">
+        },
+        {
+        productName: "Black Leather Jacket",
+        category: "Jacket",
+        price: "129",
+        <img src="images/th (5).jpeg" alt="">
+        },
+        {
+        productName: "Stylish Pink Trousers",
+        category: "Bottomwear",
+        price: "89",
+        <img src="images/th (6).jpeg" alt="">
+        },
+        {
+        productName: "Brown Men's Jacket",
+        category: "Jacket",
+        price: "189",
+        <img src="images/th (7).jpeg" alt="">
+        },
+        {
+        productName: "Comfy Gray Pants",
+        category: "Bottomwear",
+        <img src="images/th (8).jpeg" alt="">
+        },
+        ],
+        };
+        <!-- Script -->
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
